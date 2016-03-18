@@ -13,6 +13,7 @@ Voici une série de question (en vrac) sur ce que nous avons vu en cours. Elle n
 5. Pouvez vous me citez d'autres outils utiles au dévelopement Front et ReactJS en particulier ?
 
 **Réponses**
+
 1. Index.js se charge de charger les dépendances de react et va ensuite charger les classes qui se trouvent dans le réprtoire ./components/YourApp, comme j'avais quelques soucis j'ai chargé les dep manuellement et ai utilisé un fichier **helloworld.js**
 
 2. Webpack sert a fournir des "plugins" au site web, le rendant ainsi plus flexible (en gros au lieu de charger les js 1 par 1, on utilise simplement leur nom en tant que plugin, webapck se charge des dépendance, un peu à la npm
