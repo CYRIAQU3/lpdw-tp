@@ -7,6 +7,10 @@
 
 **Réponses**
 
-1. {} pour le html et {{}} pour du JS et du contenu dynamique
+1. "" pour le html et {} pour du JS et du contenu dynamique
 
-2. Oui , par exemple avec **React.createElement(h2,(...))**
+2. Non, pas directement dans la variable, il est plutot préferable de placer les balises voulu avant la variable js, ex :
+
+`render: function () {
+		    return <h1>Hello {this.props.message}!</h1>;
+		  }`
