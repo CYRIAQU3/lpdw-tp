@@ -7,3 +7,10 @@
 3. Lorsque l'on définit un composant React ayant des `props`, il existe un moyen de les ***typer*** et de les rendre ***obligatoire***. Sauriez-vous expliquer ce que `PropTypes` de la librairie React nous propose de faire cela ?
 
 4. Lorsqu'une propriété d'un composant est dites ***non-obligatoire***, quelle serait selon vous le meilleur moyen de définir une valeur par défaut à un composant ? ***Pensez aux `PropTypes` de la lib React.***
+
+##Réponses
+
+1. Cela permet des les réutiliser ailleur facilement.
+2. Il y a également array,bool,func,array et object
+3. ?
+4. Il faut définir une valeur par défaut avec la méthode **getDefaultProps**
