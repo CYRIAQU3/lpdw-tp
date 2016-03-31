@@ -2,25 +2,28 @@ import React    from 'react-dom';
 import ReactDOM from 'react-dom';
 import YourApp  from './components/YourApp';
 
-ReactDOM.render(
-  <YourApp />,
-  document.getElementById('root')
-);
+var IP = React.createClass({
+  getInitialState: function() {
+    return {value: 'Hello world'};
+  },
+  handleChange: function() {
+    this.setState({value: this.refs.textarea.value});
+  }
+  render: function() {
+    return (
+      <div className="ip">
+        <h3>Input</h3>
+        <textarea
+          onChange={this.handleChange}
+          ref="textarea"
+          defaultValue={this.state.value} />
+        <h3>Output</h3>
+        <div
+          className="content"
+        />
+      </div>
+    );
+  }
+});
 
-var ip = React.createClass({
-		  render: function() {
-		    return <input type="text"
-		    value={this.state.value}
-        	onChange=dv.setState({val: {this.state.value}}); />;
-		  }
-		});
-
-
-var dv = React.createClass({
-		  render: function () {
-		    return <div id="{this.props.name}">{this.props.val}</div>;
-		  }
-		});
-
-		React.render(<dv name="container_div" val="" />, document.getElementById('root'));
-		React.render(<ip />, document.getElementById('root'));
+ReactDOM.render(<IP />, mountNode);
